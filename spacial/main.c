@@ -78,11 +78,9 @@ int circle_size(void) {
 }
 
 int main(void) {
-    SetConfigFlags(FLAG_FULLSCREEN_MODE);  
+    SetConfigFlags(FLAG_FULLSCREEN_MODE | FLAG_MSAA_4X_HINT);
 
     InitWindow(0, 0, "SPACIAL");
-
-    DisableCursor();
 
     int width = GetScreenWidth();
     int height = GetScreenHeight();
